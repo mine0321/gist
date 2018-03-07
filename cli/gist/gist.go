@@ -6,9 +6,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/b4b4r07/gist/api"
-	"github.com/b4b4r07/gist/cli"
-	"github.com/b4b4r07/gist/cli/config"
+	"github.com/mine0321/gist/api"
+	"github.com/mine0321/gist/cli"
+	"github.com/mine0321/gist/cli/config"
 	"github.com/google/go-github/github"
 )
 

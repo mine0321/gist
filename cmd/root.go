@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/b4b4r07/gist/cli/config"
-	"github.com/b4b4r07/gist/cli/gist"
+	"github.com/mine0321/gist/cli/config"
+	"github.com/mine0321/gist/cli/gist"
 	"github.com/spf13/cobra"
 )
 

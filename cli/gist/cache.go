@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/b4b4r07/gist/cli/config"
+	"github.com/mine0321/gist/cli/config"
 )
 
 var Filename = "cache.json"

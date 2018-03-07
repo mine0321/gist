@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/b4b4r07/gist/cli"
-	"github.com/b4b4r07/gist/cli/screen"
+	"github.com/mine0321/gist/cli"
+	"github.com/mine0321/gist/cli/screen"
 	"github.com/spf13/cobra"
 )
 

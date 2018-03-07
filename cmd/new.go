@@ -10,9 +10,9 @@ import (
 
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/b4b4r07/gist/cli"
-	"github.com/b4b4r07/gist/cli/config"
-	"github.com/b4b4r07/gist/cli/gist"
+	"github.com/mine0321/gist/cli"
+	"github.com/mine0321/gist/cli/config"
+	"github.com/mine0321/gist/cli/gist"
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
