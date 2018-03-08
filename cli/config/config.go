@@ -27,6 +27,7 @@ type CoreConfig struct {
 type GistConfig struct {
 	Token       string        `toml:"token"`
 	BaseURL     string        `toml:"base_url"`
+	ApiURL      string        `toml:"api_url"`
 	Dir         string        `toml:"dir"`
 	FileExt     string        `toml:"file_ext"`
 	UseCache    bool          `toml:"use_cache"`
@@ -99,6 +100,7 @@ func (cfg *Config) LoadFile(file string) error {
 
 	cfg.Gist.Token = os.Getenv("GITHUB_TOKEN")
 	cfg.Gist.BaseURL = "https://gist.github.com"
+	cfg.Gist.ApiURL = "https://api.github.com/api/v3/"
 	dir := filepath.Join(filepath.Dir(file), "files")
 	os.MkdirAll(dir, 0700)
 	cfg.Gist.Dir = dir

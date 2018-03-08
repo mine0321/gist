@@ -1,12 +1,14 @@
 package api
 
 import (
+  "net/url"
 	"context"
 	"errors"
 
 	"github.com/google/go-github/github"
 	runewidth "github.com/mattn/go-runewidth"
 	"golang.org/x/oauth2"
+	"github.com/mine0321/gist/cli/config"
 )
 
 var IDLength = 9
@@ -41,6 +43,11 @@ func NewGist(token string) (*Gist, error) {
 	)
 	tc := oauth2.NewClient(oauth2.NoContext, ts)
 	client := github.NewClient(tc)
+	apiurl, err := url.Parse(config.Conf.Gist.ApiURL)
+	if err != nil {
+		return &Gist{Client: client}, err
+	}
+	client.BaseURL = apiurl
 	return &Gist{Client: client}, nil
 }
 

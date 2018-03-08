@@ -3,7 +3,6 @@ package cmd
 import (
 	"github.com/mine0321/gist/cli"
 	"github.com/mine0321/gist/cli/config"
-	"github.com/mine0321/gist/cli/gist"
 	"github.com/mine0321/gist/cli/screen"
 	"github.com/spf13/cobra"
 )
@@ -17,7 +16,7 @@ var openCmd = &cobra.Command{
 
 func open(cmd *cobra.Command, args []string) (err error) {
 	if config.Conf.Flag.OpenBaseURL {
-		return cli.Open(gist.BaseURL)
+		return cli.Open(config.Conf.Gist.BaseURL)
 	}
 
 	s, err := screen.Open()

@@ -12,8 +12,6 @@ import (
 	"github.com/google/go-github/github"
 )
 
-const BaseURL = "https://gist.github.com"
-
 var (
 	Dir string
 )

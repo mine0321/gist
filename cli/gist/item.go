@@ -38,7 +38,7 @@ func convertItem(item api.Item) Item {
 		Files:       files,
 		// original field
 		URL: func() string {
-			u, _ := url.Parse(BaseURL)
+			u, _ := url.Parse(config.Conf.Gist.BaseURL)
 			u.Path = path.Join(u.Path, item.ID)
 			return u.String()
 		}(),
