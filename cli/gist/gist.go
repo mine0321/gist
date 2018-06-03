@@ -85,7 +85,6 @@ func (c *Client) Create(files Files, desc string, private bool) (item Item, err 
 	for _, file := range resp.Files {
 		files = append(files, File{
 			Filename: *file.Filename,
-			Content:  *file.Content,
 			Path:     filepath.Join(Dir, *resp.ID, *file.Filename),
 			ItemID:   *resp.ID,
 		})
