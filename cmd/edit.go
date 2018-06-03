@@ -4,6 +4,7 @@ import (
 	"github.com/mine0321/gist/cli/config"
 	"github.com/mine0321/gist/cli/gist"
 	"github.com/mine0321/gist/cli/screen"
+	"github.com/mine0321/gist/cli"
 	"github.com/spf13/cobra"
 )
 
@@ -36,6 +37,7 @@ func edit(cmd *cobra.Command, args []string) (err error) {
 		}
 	}
 
+	cli.Underline("Edited", rows[0].URL)
 	return
 }
 
