@@ -40,7 +40,7 @@ type FlagConfig struct {
 	BlogMode     bool `toml:"blog_mode"`
 	StarredItems bool `toml:"starred"`
 
-	NewPrivate  bool `toml:"-"`
+	NewPrivate  bool `toml:"new_private"`
 	OpenBaseURL bool `toml:"-"`
 }
 
